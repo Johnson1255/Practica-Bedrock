@@ -19,11 +19,33 @@ public class Zodiaco {
                     mesString = "Capricornio";
                     break;
                 }
-                
+
                 else if(dia > 20 && dia <= 31 && mes == 1){
                     mesString = "Acuario";
                     break;
                 }
+
+                case 2:
+                        if(dia > 0 && dia <= 20 && mes == 2){
+                            mesString = "Acuario";
+                            break;
+                    }
+
+                        else if(dia > 20 && dia <= 29 && mes == 2){
+                            mesString = "Piscis";
+                            break;
+                    }
+
+                    case 3:
+                        if(dia > 0 && dia <= 20 && mes == 3){
+                            mesString = "Piscis";
+                            break;
+                    }
+                    
+                        else if(dia > 20 && dia <= 31 && mes == 3){
+                            mesString = "Aries";
+                            break;
+                    }
 
             }
 
