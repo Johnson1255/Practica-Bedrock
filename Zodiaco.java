@@ -73,7 +73,7 @@ public class Zodiaco {
                             mesString = "Géminis";
                             break;
                     }
-                    
+
                         else if(dia > 20 && dia <= 30 && mes == 6){
                             mesString = "Cáncer";
                             break;
@@ -87,6 +87,39 @@ public class Zodiaco {
 
                         else if(dia > 20 && dia <= 31 && mes == 7){
                             mesString = "Leo";
+                            break;
+                    }
+
+                    case 8:
+                        if(dia > 0 && dia <= 20 && mes == 8){
+                            mesString = "Leo";
+                            break;
+                    }
+                    
+                        else if(dia > 20 && dia <= 31 && mes == 8){
+                            mesString = "Virgo";
+                            break;
+                    }
+
+                    case 9:
+                        if(dia > 0 && dia <= 20 && mes == 9){
+                            mesString = "Virgo";
+                            break;
+                    }
+
+                        else if(dia > 20 && dia <= 30 && mes == 9){
+                            mesString = "Libra";
+                            break;
+                    }
+
+                    case 10:
+                        if(dia > 0 && dia <= 20 && mes == 10){
+                            mesString = "Libra";
+                            break;
+                    }
+
+                        else if(dia > 20 && dia <= 31 && mes == 10){
+                            mesString = "Escorpio";
                             break;
                     }
 
