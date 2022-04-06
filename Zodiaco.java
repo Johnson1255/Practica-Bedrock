@@ -9,6 +9,28 @@ public class Zodiaco {
 
         System.out.println("Mes de nacimiento (En Números)");
         int mes = teclado.nextInt();
+
+        String mesString = "";
+        if (dia <= 31){
+            switch (mes){
+
+                case 1:
+                if (dia > 0 && dia <= 20 && mes == 1){
+                    mesString = "Capricornio";
+                    break;
+                }
+                
+                else if(dia > 20 && dia <= 31 && mes == 1){
+                    mesString = "Acuario";
+                    break;
+                }
+
+            }
+
+            System.out.println("Eres " + mesString + " Felicidades!");
+
+        }
+
     }
     
 }
