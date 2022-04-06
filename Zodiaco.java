@@ -14,7 +14,7 @@ public class Zodiaco {
         if (dia <= 31){
             switch (mes){
 
-                case 1:
+                    case 1:
                         if (dia > 0 && dia <= 20 && mes == 1){
                          mesString = "Capricornio";
                          break;
@@ -25,7 +25,7 @@ public class Zodiaco {
                         break;
                     }
 
-                case 2:
+                    case 2:
                         if(dia > 0 && dia <= 20 && mes == 2){
                             mesString = "Acuario";
                             break;
@@ -95,7 +95,7 @@ public class Zodiaco {
                             mesString = "Leo";
                             break;
                     }
-                    
+
                         else if(dia > 20 && dia <= 31 && mes == 8){
                             mesString = "Virgo";
                             break;
@@ -120,6 +120,28 @@ public class Zodiaco {
 
                         else if(dia > 20 && dia <= 31 && mes == 10){
                             mesString = "Escorpio";
+                            break;
+                    }
+
+                    case 11:
+                        if(dia > 0 && dia <= 20 && mes == 11){
+                            mesString = "Escorpio";
+                            break;
+                    }
+
+                        else if(dia > 20 && dia <= 30 && mes == 11){
+                            mesString = "Sagitario";
+                            break;
+                    }
+
+                    case 12:
+                        if(dia > 0 && dia <= 20 && mes == 12){
+                            mesString = "Sagitario";
+                            break;
+                    }
+
+                        else if(dia > 20 && dia <= 31 && mes == 12){
+                            mesString = "Capricornio";
                             break;
                     }
 
