@@ -17,5 +17,21 @@ public class DiasVividos {
         int año = teclado.nextInt();
 
         teclado.close();
+
+        System.out.println("Tu has vivido: " + Calculador(dia, mes, año));
+
+    }
+
+        // Revisar el codigo ya que hay errores para calcular los dias vividos, se ha podido calcular años, mas no dias.
+
+    static int Calculador(int dia, int mes, int año){
+
+        LocalDate fechaHoy = LocalDate.now();
+        LocalDate fechaNacimiento = LocalDate.of(año, mes, dia);
+
+        Period periodo = Period.between(fechaNacimiento, fechaHoy);
+
+        // Realizar Un Cambio a este aspecto, ponerlo en "GetDays" ocurre varios errores de calculo, pendiente de modificacion.
+        return periodo.getYears();
     }
 }
