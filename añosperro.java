@@ -14,7 +14,7 @@ public class añosperro {
         int mes = teclado.nextInt();
 
         System.out.println("ahora calculemos tu edad en años de perro");
-        int edadperro = ((edad + ( mes / 12 )) / 7);
+        int edadperro = ((edad + ( mes / 12 )) * 7);
         System.out.println(edadperro);}
 
 }
