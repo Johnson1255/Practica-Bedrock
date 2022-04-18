@@ -30,6 +30,9 @@ public class Numerologia {
         
         System.out.println("Ingrese el septimo numero: ");
             septimoNumero = input.nextInt();
+        
+        System.out.println("Ingrese el ultimo numero: ");
+            octavoNumero = input.nextInt();
 
         sum = primerNumero + segundoNumero + tercerNumero + cuartoNumero + quintoNumero + sextoNumero + septimoNumero + octavoNumero;
 
