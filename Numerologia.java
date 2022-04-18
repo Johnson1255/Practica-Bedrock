@@ -21,6 +21,9 @@ public class Numerologia {
         
         System.out.println("Ingrese el cuarto numero: ");
             cuartoNumero = input.nextInt();
+        
+        System.out.println("Ingrese el quinto numero: ");
+            quintoNumero = input.nextInt();
 
         sum = primerNumero + segundoNumero + tercerNumero + cuartoNumero + quintoNumero + sextoNumero + septimoNumero + octavoNumero;
 
