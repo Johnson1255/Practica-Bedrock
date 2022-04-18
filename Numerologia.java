@@ -5,7 +5,7 @@ public class Numerologia {
     public static void main(String[] args) {
         Scanner input  = new Scanner(System.in);
 
-        int primerNumero=0, segundoNumero=0, tercerNumero=0, cuartoNumero=0, quintoNumero=0, sextoNumero=0, septimoNumero=0, octovoNumero=0;
+        int primerNumero=0, segundoNumero=0, tercerNumero=0, cuartoNumero=0, quintoNumero=0, sextoNumero=0, septimoNumero=0, octavoNumero=0;
         int sum;
 
         System.out.println("Porfavor ingrese su fecha de nacimiento de la siguiente forma DD/MM/AAAA. Teniendo en cuenta los '0' como 01 02 03...");
@@ -15,7 +15,12 @@ public class Numerologia {
         primerNumero = input.nextInt();
 
         System.out.println("Ingrese el segundo numero: ");
-        primerNumero = input.nextInt();
+        segundoNumero = input.nextInt();
+
+
+        sum = primerNumero + segundoNumero + tercerNumero + cuartoNumero + quintoNumero + sextoNumero + septimoNumero + octavoNumero;
+
+        System.out.println("Tu Numerologia es: " + sum);
 
     }
 }
