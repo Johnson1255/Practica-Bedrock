@@ -10,7 +10,6 @@ public class Numerologia {
 
         System.out.println("Porfavor ingrese su fecha de nacimiento de la siguiente forma DD/MM/AAAA. Teniendo en cuenta los '0' como 01 02 03...");
 
-        //  Copiar y pegar el mismo enunciado de abajo, cambiando los datos de "****** numero" 
         System.out.println("Ingrese el primer numero: ");
         primerNumero = input.nextInt();
 
