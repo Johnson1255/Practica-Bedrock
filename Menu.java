@@ -8,9 +8,14 @@ public class Menu {
 
         Scanner scanner = new Scanner(System.in);
 
+        boolean salir = false;
+        
         int opcion;
 
-        do {
+        while (!salir) {
+
+
+        
             System.out.println("---¿Que Quieres Saber?---");
 
             System.out.println("1. Saber Mi Signo Zodiacal.");
@@ -20,27 +25,46 @@ public class Menu {
             System.out.println("3. Saber Mis Dias Vividos.");
     
             System.out.println("4. Saber Cual Es Mi Numerologia.");
+
+            System.out.println("5. Salir");
     
             System.out.println("Porfavor Digite Una Opcion: ");
                 opcion = scanner.nextInt(); 
-
-        } while (opcion < 1 || opcion > 4);
 
         
             switch (opcion){
                 case 1:
                     Signo();
                     break;
+
                 case 2:
                     Perro();
                     break;
+
                 case 3:
                     Dias();
                     break;
+
                 case 4:
                     Numero();
                     break;
+
+                case 5:
+                    salir = true;
+                    break;
+
+                case 7:
+                    System.out.println("~ZAPATO~");
+                    break;
+                
+                default:
+                    System.out.println("Porfavor ingrese una opcion valida. Son entre el 1 y 5");
+                    break;
             }
+
+        }
+
+        System.out.println("Fin Del Menú");
 
     }
 
