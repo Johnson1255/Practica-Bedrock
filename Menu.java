@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Scanner;
 import java.util.*;
 
 public class Menu {
@@ -34,18 +35,22 @@ public class Menu {
         
             switch (opcion){
                 case 1:
+                    System.out.println("¡Aqui sabras cual es tu signo zodiacal!");
                     Signo();
                     break;
 
                 case 2:
+                    System.out.println("¡Aqui sabras cuantos años tienes en edad de perro!");
                     Perro();
                     break;
 
                 case 3:
+                    System.out.println("¡Aqui sabras cuantos dias en total haz vivido en toda tu vida!");
                     Dias();
                     break;
 
                 case 4:
+                    System.out.println("¡Aqui descubriras cual es tu numerologia!");
                     Numero();
                     break;
 
