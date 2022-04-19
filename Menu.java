@@ -8,18 +8,24 @@ public class Menu {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("¿QUE QUIERES APRENDER?");
+        int opcion;
 
-        System.out.println("1. Saber Mi Signo Zodiacal");
+        do {
+            System.out.println("---¿Que Quieres Saber?---");
 
-        System.out.println("2. Saber Mi Edad En Años De Perro");
+            System.out.println("1. Saber Mi Signo Zodiacal.");
+    
+            System.out.println("2. Saber Mi Edad En Años De Perro.");
+    
+            System.out.println("3. Saber Mis Dias Vividos.");
+    
+            System.out.println("4. Saber Cual Es Mi Numerologia.");
+    
+            System.out.println("Porfavor Digite Una Opcion: ");
+                opcion = scanner.nextInt(); 
 
-        System.out.println("3. Saber Mis Dias Vividos");
+        } while (opcion < 1 || opcion > 4);
 
-        System.out.println("4. Saber Cual Es Mi Numerologia");
-
-        System.out.println("Porfavor Digite Una Opcion: ");
-            int opcion = scanner.nextInt();
         
             switch (opcion){
                 case 1:
