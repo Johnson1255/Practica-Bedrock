@@ -1,37 +1,22 @@
-import java.time.LocalDate;
-import java.time.Period;
-import java.util.Scanner;
+import java.util.*;
 
 public class DiasVividos {
 
     public static void main(String[] args) {
+        char seguir = 0;
+
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Día de nacimiento (En Números)");
-        int dia = teclado.nextInt();
+        do {
+            System.out.println("DD/MM/AAAA");
+            System.out.println("Escribe tu fecha de Nacimiento: ");
+            String nacimientoFecha = teclado.next();
 
-        System.out.println("Mes de nacimiento (En Números)");
-        int mes = teclado.nextInt();
+            System.out.println("Escribe la fecha de hoy: ");
+            String fechaHoy = teclado.next();
 
-        System.out.println("Año de nacimiento (En Números)");
-        int año = teclado.nextInt();
-
-        teclado.close();
-
-        System.out.println("Tu has vivido: " + Calculador(dia, mes, año));
-
-    }
-
-        // Revisar el codigo ya que hay errores para calcular los dias vividos, se ha podido calcular años, mas no dias.
-
-    static int Calculador(int dia, int mes, int año){
-
-        LocalDate fechaHoy = LocalDate.now();
-        LocalDate fechaNacimiento = LocalDate.of(año, mes, dia);
-
-        Period periodo = Period.between(fechaNacimiento, fechaHoy);
-
-        // Realizar Un Cambio a este aspecto, ponerlo en "GetDays" ocurre varios errores de calculo, pendiente de modificacion.
-        return periodo.getYears();
+            String[] fecha = nacimientoFecha.split("/");
+            Integer nacimientoDia = Integer.parseInt(fecha[0]);
+        }
     }
 }
