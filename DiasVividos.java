@@ -70,6 +70,53 @@ public class DiasVividos {
                 System.out.println("La fecha de nacimiento debe ser menor a la fecha actual");
             }
 
+            else {
+                if (nacimientoMes <= mesHoy){
+
+                    años = añoHoy - nacimientoAño;
+
+                    if(nacimientoDia <= diaHoy){
+
+                        meses = mesHoy - nacimientoMes;
+
+                        dias = b - (nacimientoDia - diaHoy);
+                }
+
+                else {
+                    if (mesHoy == nacimientoMes){
+                        años = años - 1;
+                    }
+
+                    meses = (mesHoy - nacimientoMes - 1 + 12) % 12;
+
+                    dias = b - (nacimientoDia - diaHoy);
+
+                }
+            }
+
+                else {
+
+                    años = añoHoy - nacimientoAño - 1;
+                    System.out.println("Años?¿: " + años);
+
+                    if (nacimientoDia > diaHoy){
+                        meses = mesHoy - nacimientoMes - 1 + 12;
+                        dias = diaHoy - nacimientoDia;
+                    }
+                    else {
+                        meses = mesHoy - nacimientoMes + 12;
+                        dias = diaHoy - nacimientoDia;
+                    }
+                }
+            }
+
+            System.out.println("Años: " + años);
+            System.out.println("Meses: " + meses);
+            System.out.println("Dias: " + dias);
+
+            System.out.println("¿Quieres saber cuanto vives con otra fecha? s/n");
+            
+            seguir = teclado.next().charAt(0);
 
         } while (seguir != 'n');
     }
