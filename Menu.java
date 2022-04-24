@@ -17,19 +17,25 @@ public class Menu {
 
 
         
-            System.out.println("---¿Que Quieres Saber?---");
-
-            System.out.println("1. Saber Mi Signo Zodiacal.");
-    
-            System.out.println("2. Saber Mi Edad En Años De Perro.");
-    
-            System.out.println("3. Saber Mis Dias Vividos.");
-    
-            System.out.println("4. Saber Cual Es Mi Numerologia.");
-
-            System.out.println("5. Salir");
-    
-            System.out.println("Porfavor Digite Una Opcion: ");
+            System.out.println("  ______________________________________");
+            System.out.println("/  |                                    |");
+            System.out.println("|  |                                    |");
+            System.out.println("|_ |                                    |");
+            System.out.println("   |     ---¿Que Quieres Saber?---      |");
+            System.out.println("   |                                    |.");
+            System.out.println("   |                                    |.");
+            System.out.println("   |1. Saber Mi Signo Zodiacal.         |.");
+            System.out.println("   |                                    |.");
+            System.out.println("   |2. Saber Mi Edad En Años De Perro.  |.");
+            System.out.println("   |                                    |.");
+            System.out.println("   |3. Saber Mis Dias Vividos.          |.");
+            System.out.println("   |                                    |.");
+            System.out.println("   |4. Saber Cual Es Mi Numerologia.    |.");
+            System.out.println("   |                                    |.");
+            System.out.println("   |5. Salir                            |.");
+            System.out.println("   |   _________________________________|___");
+            System.out.println("   |  /     Porfavor Digite Una Opcion:    /.");
+            System.out.println("   |_/____________________________________/");
                 opcion = scanner.nextInt(); 
 
         
